@@ -1,0 +1,79 @@
+
+
+****************************************************************************
+
+<template name="templateExample">
+  <div>
+    <h1>Here is an example template that can be inserted anywhere!</h1>
+  </div>
+</template>
+
+
+****************************************************************************
+
+Insert a template:
+  {{> template}}
+
+
+If statement:
+  {{#if statement}}
+    HTML code only to be displayed if statement is true
+  {{/if}}
+
+
+Iterate through a list:
+  {{#each item}}
+    Generate dynamic HTML code here
+  {{/each}}
+
+****************************************************************************
+
+HTML File:
+
+<template name="someTemplateName">
+  <div>
+    <h1>I'm about to call some helper functions!</h1>
+    {{sayHello}} <br>
+    {{sayGoodBye}}
+  </div>
+</template>
+
+
+
+Javascript File:
+
+Template.someTemplateName.helpers({
+    sayHello: function () {
+      console.log("Hello out there!  I'm in a helper!");
+    },
+
+    sayGoodBye: function () {
+      console.log("Good Bye out there!");
+    }
+
+  });
+
+  ************************************************************
+
+  //The following routing call will render the template 'home' when the browser is pointed to '/'.  A string
+  //is being passed as data during the function call.
+  
+  Router.route('/', function () {
+  this.render('home', {data: {title: 'This data can be accessed with a spacebars call to title'}});
+  });
+
+
+
+  ************************************************************
+  
+  //Run on client
+  MyData = new Mongo.Collection("myData");
+
+
+  //Run on Server
+  Meteor.publish("myData", function () {
+    return MyData.find({})
+  });
+      
+ 
+

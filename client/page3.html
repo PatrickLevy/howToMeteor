@@ -1,0 +1,107 @@
+<template name="pageThree">
+  <div class="container">
+    <div class="row">
+      <div class ="col-md-2">
+      <h2>Meteor.JS</h2>
+      </div>
+      <div class ="col-md-10">
+      <h1><strong>Adding More Advanced Features to an App</strong></h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class = "col-md-2">
+        {{> Nav}}
+      </div>
+      <div class = "col-md-10">
+        <ul>
+          <li>
+            <h4>Adding routing to create a multiple page app</h4>
+            Before you can create multiple pages you need to add a package called Iron:Router.  Add the package as shown below and then restart the app.
+            <li class="principles">
+              <img src="addIronRouter.png">
+            </li>
+            <br>
+            Now you will create each page as separate templates.  Update your HTML file to include the following:
+            <li class="principles">
+              <img src="MultiplePagesHTML1.png">
+              <br>
+            </li>
+            Update your javascript so that the client knows the routes to each template based on the requested address:
+            <li class="principles">
+              <img src="MultiplePagesJS1.png">
+            </li>
+            <br>
+          </li>
+          <li>
+            <h4>Incorporate a Mongo Database</h4>
+            We are now going to add a Mongo Database to our proejct as a place to record the names that are added via the form.  The first thing to do is create a new Mongo collection at the very top of the javascript file, before the client or server only code.
+            <li class="principles">
+              <img src="mongo1.png">
+            </li>
+            <br>
+          </li>
+            Next we will set up the server to publish the data from this collection.
+            <li class="principles">
+              <img src="mongo2.png">
+            </li>
+            <br>
+            We will now set up the client to subscribe to the data that is being published by the server.
+            <li class="principles">
+              <img src="mongo3.png">
+            </li>
+            <br>
+            We will now update our templates to insert the data from our text entry into the mongo database
+            <li class="principles">
+              <img src="mongo4.png">
+            </li>
+            <br>
+          <li>
+            <h4>Use SpaceBars to iterate through a list of objects</h4>
+            Update your exampleTemplate helpers to include a function for showing all the names in the Mongo database:
+            <li class="principles">
+              <img src="showNames1.png">
+            </li>
+            <br>
+          </li>
+            Update your HTML to include the following in the exampleTemplate:
+            <li class="principles">
+              <img src="showNames2.png">
+            </li>
+            <br>
+            Your app should now display each of the names stored in your database:
+            <li class="principles">
+              <img src="showNamesApp1.png">
+            </li>
+            <br>
+          <li>
+            <h4>Add a package to allow user login</h4>
+            As an example package that can be added on we will now require users to be logged in order to view the names stored in the Mongo database.  Stop your app and add the user accounts package:
+            <li class="principles">
+              <img src="addAccounts1.png">
+            </li>
+             <br>
+            To enable users to login we will insert a login button.  Update your menu template as shown:
+            <li class="principles">
+              <img src="addAccounts2.png">
+            </li>
+            <br>
+            And finally, we will use a SpaceBars if statement so that only logged in users can view the names in the database.  Update your exampleTemplate as shown:
+            <li class="principles">
+              <img src="addAccounts3.png">
+            </li>
+            <br>
+            Your final app should look something like this:
+            <li class="principles">
+              <img src="finalApp.png">
+            </li>
+            <br>
+            Get the complete code for this app from GitHub:
+            <li class="principles">
+              <a href="https://github.com/PatrickLevy/exampleProject" target="_blank">Click here to get the complete code from GitHub</a>
+            </li>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</template>

@@ -1,0 +1,86 @@
+<template name="pageOne">
+  <div class="container">
+    <div class="row">
+      <div class ="col-md-2">
+      <h2>Meteor.JS</h2>
+      </div>
+      <div class ="col-md-10">
+      <h1><strong>Main Principles</strong></h1>
+      </div>
+    </div>    
+    <div class="row">
+      <div class = "col-md-2">
+        {{> Nav}}
+      </div>
+      <div class = "col-md-10">
+        <ul>
+          <li>
+            <h4>Templates</h4>
+            HTML templates can be created and then inserted anywhere that they are needed.  This allows for a simplified HTML file without as much redundant code.  The template can also be made dynamic by incorporating data from other parts of the application, can call javascript functions, etc.  The use of templates is a key feature in Meteor on top of which much of the other capabilites are built.
+            <li class="principles">
+              <img src="template.png">
+            </li>
+          </li>
+          <li>
+            <h4>Spacebars</h4>
+            Spacebars are a special set commands that are utilized in the HTML file.  All spacebars keywords are enclosed in double curly braces.  A few simple examples of spacebars logic expressions are illustrated below:
+            <li class="principles">
+              <img src="spacebars.png">
+            </li>
+            <li class="principles">
+              <a href="http://meteorcapture.com/spacebars/" target="_blank">Click here for further documentation on spacebars syntax </a>
+            </li>
+          </li>
+          <li>
+            <h4>Template Helpers and Events</h4>
+            Helpers are javascript functions that can be called from an interaction that the user may have with the page.  They may be defined for use within a specific template or as a global helper that can be used anywhere.
+            <br>
+            <br>
+            HTML code for template with helper functions:
+            <br>
+            <img src="templateHTML.png">
+            <br>
+            <br>
+            Javascript code for helper functions:
+            <br>
+            <img src="templateJS.png">
+          </li>
+		  <li>
+            <h4>Multiple Page Routing</h4>
+            Incorporating multiple pages into a Meteor project is typically performed using a packgage called Iron:router.  At a basic level the router is displaying different "pages" by selecting which template is displayed.  This allows multiple pages to be written into one HTML file or spread out among several files depending on developer preference.  Data can be passed easily during the router function call.
+            <li class="principles">
+              <img src="routing.png">
+            </li>
+            <li class="principles">
+              <a href="https://atmospherejs.com/iron/router/" target="_blank">Click here for further documentation on Iron:Router</a>
+            </li>
+          </li>
+          <li>
+            <h4>Packages</h4>
+            Meteor projects can incorporate prewritten packages to easily enable advanced features.  Packgages are readily available to add features such user accounts, styling, etc.  These packages are added using the command line.  An example package add is shown below:
+            <br>
+            <li class="principles">
+              <img src="packageAdd.png">
+            </li>
+            <li class="principles">
+              <a href="https://atmospherejs.com/" target="_blank">Click here for further documentation available packages </a>
+            </li>
+          </li>
+          <li>
+            <h4>Database</h4>
+            Meteor utilizes MongoDB as its database source.  Below are a couple examples of using the Mongo database with Meteor.
+            <li class="principles">
+              <img src="mongoClient1.png">
+            </li>
+            <li class="principles">
+              <img src="mongoServer1.png">
+            </li>
+            <li class="principles">
+              <a href="http://docs.mongodb.org/manual/core/crud-introduction/" target="_blank">Click here for further documentation on using MongoDB</a>
+            </li>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</template>

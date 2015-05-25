@@ -1,0 +1,41 @@
+<template name="home">
+  <div class="container">
+    <div class="row">
+      <div class ="col-md-2">
+      <h2>Meteor.JS</h2>
+      </div>
+      <div class ="col-md-10">
+      <h1><strong>How to Guide for Using Meteor.JS</strong></h1>
+      </div>
+    </div>    
+    <div class="row">
+      <div class = "col-md-2">
+        {{> Nav}}
+      </div>
+      <div class = "col-md-10">
+        <ul>
+          <li>
+            <h4>Overview</h4>
+            Meteor is a framework for creating web applications using html, javascript, and css.  It is built on top of the nodeJS.  Meteor is reactive, meaning that the server and the client are all constantly kept in sync.  This allows the creation of web based applications in which data is sent constantly to and from the server and various clients.  There is a large family of add on packages available for easy incorporation into a meteor project to allow for features such as user accounts and bootstrap styling.  Finally, Meteor uses javascript on both the client and server sides.
+          </li>
+          <li>
+            <h4>Rationale for this site</h4>
+            This site is meant to supplement existing documentation and guides for getting started with Meteor.  This guide is meant to provide a brief overview of some of the main features of Meteor without requiring a large input of time.  This will hopefully allow a a programmer who is not familiar with Meteor to determine if this framework is the right choice for them.  An experienced programmer will likely be able to use the knowledge gained here and continue developing in Meteor using the official API documentation.  A less experienced programmer who wishes to continue learning Meteor will likely want to continue learning with one of the more in depth guides that already exist.
+          </li>
+          <li>
+            <h4>Example</h4>
+            Below is an example web application that I created in Meteor.  It incorporates several of the key capabilities of Meteor such as live updates, database, and user accounts.  It is highly compatible with both desktop and mobile devices.
+          </li>
+          <li>
+          <br>
+          <a href="http://announcements.meteor.com" target="_blank">Click here to go to my example application</a>
+          </li>
+          <li>
+          <br>
+          <img src="exampleApp.png" href="http://announcements.meteor.com" target="_blank" >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</template>

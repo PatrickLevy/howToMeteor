@@ -1,0 +1,104 @@
+<template name="pageTwo">
+  <div class="container">
+    <div class="row">
+      <div class ="col-md-2">
+      <h2>Meteor.JS</h2>
+      </div>
+      <div class ="col-md-10">
+      <h1><Strong>Getting Started by Creating a Simple App</Strong></h1>
+      </div>
+    </div>    
+    <div class="row">
+      <div class = "col-md-2">
+        {{> Nav}}
+      </div>
+      <div class = "col-md-10">
+        <ul>
+          <li>
+            <h4>Installing Meteor</h4>
+            Meteor has primarily been developed on Linux and Mac OS.  It was just recently adapted to run on Windows OS.  The examples given in this guide were performed on a computer running Ubuntu Linux but Mac OS should work very similarly.  I do not have experience developing Meteor applications under Windows but it should also work similarly.
+            <li class="principles">
+                <a href="https://www.meteor.com/install" target="_blank">Click here for instructions on how to install Meteor</a>
+              </li>
+          </li>
+          <li>
+            <h4>Create a basic Meteor App</h4>
+            To get started type the following command at the command line:
+            <li class="principles">
+              <img src="createApp.png">    
+            </li>
+            <br>
+            Open the exampleProject.html and exampleProject.js files.  Erase what is in them and replace it with the following:
+            <li class="principles">
+              <img src="exampleHTML1.png">
+            </li>
+            <li class="principles">
+              <img src="exampleJS1.png">
+            </li>
+            <br>
+            Run your app by navigating your command line to the directory that contains your Meteor files.  Type the command:
+            <li class="principles">
+              <img src="runApp1.png">
+            </li>
+            <br>
+            View your app by opening a web browser.  Navigate to the address:
+            <li class="principles">
+              <img src="viewApp1.png">
+            </li>
+          </li>
+          <br>
+          <li>
+            <h4>Add a template</h4>
+            Now let's see how to add a template and use SpaceBars to view it.  At the bottom of you HTML code, add the following template:
+            <li class="principles">
+              <img src="exampleTemplate1.png">
+            </li>
+            <br>
+            We can use a SpaceBars call to insert this template anywhere else that we want.  Insert the template into your page as shown below:
+            <li class="principles">
+              <img src="insertTemplate1.png">
+            </li>
+            <br>
+          </li>
+          <li>
+            <h4>Add a helper function to make the page interactive</h4>
+            Next we are going to add a helper function to our template to make the page interactive.  Inside the exampleProject.js file insert the following code:
+            <li class="principles">
+              <img src="exampleHelper1.png">
+            </li>
+            <br>
+            We'll use SpaceBars once again to call this helper function.  Update your HTML code to the following:
+            <li class="principles">
+              <img src="exampleHelper2.png">
+            </li>
+            <br>
+            Viewing your console in the developer tools in your browser should show each message twice, since we inserted the template into our page twice.
+            <li class="principles">
+              <img src="simpleApp1.png">
+            </li>
+            <br>
+            Lastly, we'll add a form and a submit button to allow us to display a name.  Update your HTML to the following:
+            <li class="principles">
+              <img src="nameHTML1.png">
+            </li>
+            <br>
+            Update your javascript to the following:
+            <li class="principles">
+              <img src="nameJS1.png">
+            </li>
+            <br>
+            Your app should have the following behavior:
+            <li class="principles">
+              <img src="nameApp1.png">
+            </li>
+            <br>
+            Get the complete code for this app from GitHub:
+            <li class="principles">
+              <a href="https://github.com/PatrickLevy/exampleProject" target="_blank">Click here to get the complete code from GitHub</a>
+            </li>
+          </li>     
+        </ul>
+      </div>
+    </div>
+  </div>
+</template>

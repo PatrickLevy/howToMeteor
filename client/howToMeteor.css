@@ -1,0 +1,36 @@
+/* CSS declarations go here */
+.container {
+  
+  margin: 0 auto;
+  min-height: 100%;
+  background: 990134;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+
+}
+
+li {
+	margin-top: 20px;
+}
+
+.col-md-2 {
+
+	background-image: linear-gradient(to bottom, lightgray, white 100%);
+
+}
+
+.col-md-10{
+	background-image: linear-gradient(to bottom, lightgray, white 100%)
+}
+
+.principles
+{
+	margin-left: 0px;
+}
+
+h4 {
+	font-weight: bold;
+}
